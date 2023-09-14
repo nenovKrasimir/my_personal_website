@@ -19705,3 +19705,79 @@ body.white-version .rn-btn-ulderline {
   color: var(--color-white) !important;
 }
 /*# sourceMappingURL=../maps/style.css.map */
+/* Chat Widget Styles */
+#chat-widget {
+    width: 300px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    z-index: 9999;
+}
+
+#chat-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#chat-messages {
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.user-message {
+    background-color: #f0f0f0;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+#chat-input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#send-button {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#send-button:hover {
+    background-color: #555;
+}
+
+/* Optional: Add styles to hide the chat widget initially and show it on a button click */
+#chat-widget.hidden {
+    display: none;
+}
+
+#show-chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#show-chat-button:hover {
+    background-color: #555;
+}
