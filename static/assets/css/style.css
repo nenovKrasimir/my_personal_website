@@ -4236,556 +4236,6 @@ ol ul {
   .pl_md--100 {
     padding-left: 100px !important;
   }
-
-  .pr_md--100 {
-    padding-right: 100px !important;
-  }
-
-  .mt_md--100 {
-    margin-top: 100px !important;
-  }
-
-  .mb_md--100 {
-    margin-bottom: 100px !important;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .ptb_sm--250 {
-    padding: 250px 0 !important;
-  }
-
-  .ptb_sm--0 {
-    padding: 0 !important;
-  }
-
-  .pl_sm--0 {
-    padding-left: 0 !important;
-  }
-
-  .pr_sm--0 {
-    padding-right: 0 !important;
-  }
-
-  .pt_sm--0 {
-    padding-top: 0 !important;
-  }
-
-  .pb_sm--0 {
-    padding-bottom: 0 !important;
-  }
-
-  .mr_sm--0 {
-    margin-right: 0 !important;
-  }
-
-  .ml_sm--0 {
-    margin-left: 0 !important;
-  }
-
-  .mt_sm--0 {
-    margin-top: 0 !important;
-  }
-
-  .mb_sm--0 {
-    margin-bottom: 0 !important;
-  }
-
-  .pt_sm--150 {
-    padding-top: 150px !important;
-  }
-
-  .pb_sm--110 {
-    padding-bottom: 110px !important;
-  }
-
-  .ptb_sm--5 {
-    padding: 5px 0 !important;
-  }
-
-  .plr_sm--5 {
-    padding: 0 5px !important;
-  }
-
-  .pt_sm--5 {
-    padding-top: 5px !important;
-  }
-
-  .pb_sm--5 {
-    padding-bottom: 5px !important;
-  }
-
-  .pl_sm--5 {
-    padding-left: 5px !important;
-  }
-
-  .pr_sm--5 {
-    padding-right: 5px !important;
-  }
-
-  .mt_sm--5 {
-    margin-top: 5px !important;
-  }
-
-  .ml_sm--5 {
-    margin-left: 5px !important;
-  }
-
-  .mr_sm--5 {
-    margin-right: 5px !important;
-  }
-
-  .mb_sm--5 {
-    margin-bottom: 5px !important;
-  }
-
-  .ptb_sm--10 {
-    padding: 10px 0 !important;
-  }
-
-  .plr_sm--10 {
-    padding: 0 10px !important;
-  }
-
-  .pt_sm--10 {
-    padding-top: 10px !important;
-  }
-
-  .pb_sm--10 {
-    padding-bottom: 10px !important;
-  }
-
-  .pl_sm--10 {
-    padding-left: 10px !important;
-  }
-
-  .pr_sm--10 {
-    padding-right: 10px !important;
-  }
-
-  .mt_sm--10 {
-    margin-top: 10px !important;
-  }
-
-  .ml_sm--10 {
-    margin-left: 10px !important;
-  }
-
-  .mr_sm--10 {
-    margin-right: 10px !important;
-  }
-
-  .mb_sm--10 {
-    margin-bottom: 10px !important;
-  }
-
-  .ptb_sm--15 {
-    padding: 15px 0 !important;
-  }
-
-  .plr_sm--15 {
-    padding: 0 15px !important;
-  }
-
-  .pt_sm--15 {
-    padding-top: 15px !important;
-  }
-
-  .pb_sm--15 {
-    padding-bottom: 15px !important;
-  }
-
-  .pl_sm--15 {
-    padding-left: 15px !important;
-  }
-
-  .pr_sm--15 {
-    padding-right: 15px !important;
-  }
-
-  .mt_sm--15 {
-    margin-top: 15px !important;
-  }
-
-  .ml_sm--15 {
-    margin-left: 15px !important;
-  }
-
-  .mr_sm--15 {
-    margin-right: 15px !important;
-  }
-
-  .mb_sm--15 {
-    margin-bottom: 15px !important;
-  }
-
-  .ptb_sm--20 {
-    padding: 20px 0 !important;
-  }
-
-  .plr_sm--20 {
-    padding: 0 20px !important;
-  }
-
-  .pt_sm--20 {
-    padding-top: 20px !important;
-  }
-
-  .pb_sm--20 {
-    padding-bottom: 20px !important;
-  }
-
-  .pl_sm--20 {
-    padding-left: 20px !important;
-  }
-
-  .pr_sm--20 {
-    padding-right: 20px !important;
-  }
-
-  .mt_sm--20 {
-    margin-top: 20px !important;
-  }
-
-  .ml_sm--20 {
-    margin-left: 20px !important;
-  }
-
-  .mr_sm--20 {
-    margin-right: 20px !important;
-  }
-
-  .mb_sm--20 {
-    margin-bottom: 20px !important;
-  }
-
-  .ptb_sm--25 {
-    padding: 25px 0 !important;
-  }
-
-  .plr_sm--25 {
-    padding: 0 25px !important;
-  }
-
-  .pt_sm--25 {
-    padding-top: 25px !important;
-  }
-
-  .pb_sm--25 {
-    padding-bottom: 25px !important;
-  }
-
-  .pl_sm--25 {
-    padding-left: 25px !important;
-  }
-
-  .pr_sm--25 {
-    padding-right: 25px !important;
-  }
-
-  .mt_sm--25 {
-    margin-top: 25px !important;
-  }
-
-  .ml_sm--25 {
-    margin-left: 25px !important;
-  }
-
-  .mr_sm--25 {
-    margin-right: 25px !important;
-  }
-
-  .mb_sm--25 {
-    margin-bottom: 25px !important;
-  }
-
-  .ptb_sm--30 {
-    padding: 30px 0 !important;
-  }
-
-  .plr_sm--30 {
-    padding: 0 30px !important;
-  }
-
-  .pt_sm--30 {
-    padding-top: 30px !important;
-  }
-
-  .pb_sm--30 {
-    padding-bottom: 30px !important;
-  }
-
-  .pl_sm--30 {
-    padding-left: 30px !important;
-  }
-
-  .pr_sm--30 {
-    padding-right: 30px !important;
-  }
-
-  .mt_sm--30 {
-    margin-top: 30px !important;
-  }
-
-  .ml_sm--30 {
-    margin-left: 30px !important;
-  }
-
-  .mr_sm--30 {
-    margin-right: 30px !important;
-  }
-
-  .mb_sm--30 {
-    margin-bottom: 30px !important;
-  }
-
-  .ptb_sm--35 {
-    padding: 35px 0 !important;
-  }
-
-  .plr_sm--35 {
-    padding: 0 35px !important;
-  }
-
-  .pt_sm--35 {
-    padding-top: 35px !important;
-  }
-
-  .pb_sm--35 {
-    padding-bottom: 35px !important;
-  }
-
-  .pl_sm--35 {
-    padding-left: 35px !important;
-  }
-
-  .pr_sm--35 {
-    padding-right: 35px !important;
-  }
-
-  .mt_sm--35 {
-    margin-top: 35px !important;
-  }
-
-  .ml_sm--35 {
-    margin-left: 35px !important;
-  }
-
-  .mr_sm--35 {
-    margin-right: 35px !important;
-  }
-
-  .mb_sm--35 {
-    margin-bottom: 35px !important;
-  }
-
-  .ptb_sm--40 {
-    padding: 40px 0 !important;
-  }
-
-  .plr_sm--40 {
-    padding: 0 40px !important;
-  }
-
-  .pt_sm--40 {
-    padding-top: 40px !important;
-  }
-
-  .pb_sm--40 {
-    padding-bottom: 40px !important;
-  }
-
-  .pl_sm--40 {
-    padding-left: 40px !important;
-  }
-
-  .pr_sm--40 {
-    padding-right: 40px !important;
-  }
-
-  .mt_sm--40 {
-    margin-top: 40px !important;
-  }
-
-  .ml_sm--40 {
-    margin-left: 40px !important;
-  }
-
-  .mr_sm--40 {
-    margin-right: 40px !important;
-  }
-
-  .mb_sm--40 {
-    margin-bottom: 40px !important;
-  }
-
-  .ptb_sm--45 {
-    padding: 45px 0 !important;
-  }
-
-  .plr_sm--45 {
-    padding: 0 45px !important;
-  }
-
-  .pt_sm--45 {
-    padding-top: 45px !important;
-  }
-
-  .pb_sm--45 {
-    padding-bottom: 45px !important;
-  }
-
-  .pl_sm--45 {
-    padding-left: 45px !important;
-  }
-
-  .pr_sm--45 {
-    padding-right: 45px !important;
-  }
-
-  .mt_sm--45 {
-    margin-top: 45px !important;
-  }
-
-  .ml_sm--45 {
-    margin-left: 45px !important;
-  }
-
-  .mr_sm--45 {
-    margin-right: 45px !important;
-  }
-
-  .mb_sm--45 {
-    margin-bottom: 45px !important;
-  }
-
-  .ptb_sm--50 {
-    padding: 50px 0 !important;
-  }
-
-  .plr_sm--50 {
-    padding: 0 50px !important;
-  }
-
-  .pt_sm--50 {
-    padding-top: 50px !important;
-  }
-
-  .pb_sm--50 {
-    padding-bottom: 50px !important;
-  }
-
-  .pl_sm--50 {
-    padding-left: 50px !important;
-  }
-
-  .pr_sm--50 {
-    padding-right: 50px !important;
-  }
-
-  .mt_sm--50 {
-    margin-top: 50px !important;
-  }
-
-  .ml_sm--50 {
-    margin-left: 50px !important;
-  }
-
-  .mr_sm--50 {
-    margin-right: 50px !important;
-  }
-
-  .mb_sm--50 {
-    margin-bottom: 50px !important;
-  }
-
-  .ptb_sm--55 {
-    padding: 55px 0 !important;
-  }
-
-  .plr_sm--55 {
-    padding: 0 55px !important;
-  }
-
-  .pt_sm--55 {
-    padding-top: 55px !important;
-  }
-
-  .pb_sm--55 {
-    padding-bottom: 55px !important;
-  }
-
-  .pl_sm--55 {
-    padding-left: 55px !important;
-  }
-
-  .pr_sm--55 {
-    padding-right: 55px !important;
-  }
-
-  .mt_sm--55 {
-    margin-top: 55px !important;
-  }
-
-  .ml_sm--55 {
-    margin-left: 55px !important;
-  }
-
-  .mr_sm--55 {
-    margin-right: 55px !important;
-  }
-
-  .mb_sm--55 {
-    margin-bottom: 55px !important;
-  }
-
-  .ptb_sm--60 {
-    padding: 60px 0 !important;
-  }
-
-  .plr_sm--60 {
-    padding: 0 60px !important;
-  }
-
-  .pt_sm--60 {
-    padding-top: 60px !important;
-  }
-
-  .pb_sm--60 {
-    padding-bottom: 60px !important;
-  }
-
-  .pl_sm--60 {
-    padding-left: 60px !important;
-  }
-
-  .pr_sm--60 {
-    padding-right: 60px !important;
-  }
-
-  .mt_sm--60 {
-    margin-top: 60px !important;
-  }
-
-  .ml_sm--60 {
-    margin-left: 60px !important;
-  }
-
-  .mr_sm--60 {
-    margin-right: 60px !important;
-  }
-
-  .mb_sm--60 {
-    margin-bottom: 60px !important;
-  }
-
-  .ptb_sm--65 {
-    padding: 65px 0 !important;
-  }
-
-  .plr_sm--65 {
-    padding: 0 65px !important;
-  }
-
   .pt_sm--65 {
     padding-top: 65px !important;
   }
@@ -6784,7 +6234,7 @@ input[type=submit]:hover {
 /*==============================
  *  Utilities
 =================================*/
-/* 
+/*
 font-family: 'Red Hat Display', sans-serif;
 */
 .clearfix:before,
@@ -6806,7 +6256,7 @@ font-family: 'Red Hat Display', sans-serif;
 }
 
 /*===============================
-    Background Color 
+    Background Color
 =================================*/
 .bg-color-primary {
   background: var(--color-primary);
@@ -6837,7 +6287,7 @@ font-family: 'Red Hat Display', sans-serif;
 }
 
 /*===========================
-Background Image 
+Background Image
 =============================*/
 .bg_image {
   background-repeat: no-repeat;
@@ -7411,7 +6861,7 @@ textarea:-ms-input-placeholder {
 }
 
 /*=============================
-	Overlay styles 
+	Overlay styles
 ==============================*/
 [data-overlay],
 [data-black-overlay],
@@ -7515,7 +6965,7 @@ textarea:-ms-input-placeholder {
 }
 
 /*------------------------------
-    Scroll Up 
+    Scroll Up
 --------------------------------*/
 #scrollUp {
   width: 70px;
@@ -7609,7 +7059,7 @@ textarea:-ms-input-placeholder {
 }
 
 /*--------------------
-    Contact Form 
+    Contact Form
 ----------------------*/
 .form-message {
   margin-bottom: 0;
@@ -7625,7 +7075,7 @@ textarea:-ms-input-placeholder {
 }
 
 /*---------------------------
-    Banner Area Styles 
+    Banner Area Styles
 -----------------------------*/
 .template-color-2 {
   background: #1D1E24;
@@ -10914,9 +10364,9 @@ Copyright (c) 2015 Daniel Eden
   opacity: 1;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-xclip 
+xclip
 
 -------------------------------- */
 .cd-headline.clip span {
@@ -10950,7 +10400,7 @@ xclip
 
 /* Header  */
 /*---------------------------
-    Header Area Styles 
+    Header Area Styles
 -----------------------------*/
 @media (prefers-reduced-motion: no-preference) {
   :root {
@@ -11389,7 +10839,7 @@ body.template-color-1 {
 }
 
 /*--------------------------
-    Navigation Styles  
+    Navigation Styles
 ----------------------------*/
 .mainmenu-nav .primary-menu {
   display: flex;
@@ -11457,7 +10907,7 @@ body.template-color-1 {
 }
 
 /*----------------------------
-    Mobile Menu Styles  
+    Mobile Menu Styles
 ------------------------------*/
 .popup-mobile-menu {
   z-index: 9999;
@@ -12594,7 +12044,7 @@ figcaption {
 }
 
 /*---------------------------
-    Banner Area Styles 
+    Banner Area Styles
 -----------------------------*/
 .skill-share-inner-one .skill-share {
   flex-wrap: wrap;
@@ -13858,7 +13308,7 @@ figcaption {
 }
 
 /*---------------------------
-    Service Area Styles 
+    Service Area Styles
 -----------------------------*/
 .rn-service {
   text-align: left;
@@ -16258,7 +15708,7 @@ span.sr-only {
 }
 
 /*---------------------------
-    Contact Area Styles 
+    Contact Area Styles
 -----------------------------*/
 .contact-about-area {
   padding: 30px;
@@ -17147,7 +16597,7 @@ span.sr-only {
 }
 
 /*---------------------------
-    Contact Area Styles 
+    Contact Area Styles
 -----------------------------*/
 .footer-area h4 span {
   padding: 20px 23px;
@@ -17190,7 +16640,7 @@ span.sr-only {
 }
 
 /*-----------------------
-    Footer Style Two  
+    Footer Style Two
 --------------------------*/
 .footer-style-2 .copyright .description {
   color: var(--color-body);
@@ -17363,7 +16813,7 @@ span.sr-only {
 }
 
 /*---------------------------
-    Portfolio Area Styles 
+    Portfolio Area Styles
 -----------------------------*/
 .rn-portfolio,
 .rn-blog {
@@ -17608,7 +17058,7 @@ span.sr-only {
   padding: 35px 15px;
 }
 /*-----------------------------
-    Portfolio Style Two  
+    Portfolio Style Two
 -------------------------------*/
 .portfolio-style-two .carousel.slide {
   box-shadow: var(--shadow-1);
@@ -17975,7 +17425,7 @@ span.sr-only {
 }
 
 /*----------------------
-Rn Slick Dots Style  
+Rn Slick Dots Style
 -----------------------*/
 .slick-initialized .slick-slide {
   margin-bottom: 0 !important;
@@ -19706,138 +19156,85 @@ body.white-version .rn-btn-ulderline {
 }
 /*# sourceMappingURL=../maps/style.css.map */
 /* styles.css */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-
-}
-
-#chat-widget {
+#chat {
+    max-width: 300px;
     position: fixed;
-    bottom: 45px;
-    right: 120px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    right: 102px;
+    bottom: 30px;
+    padding: 10px;
+    background-color: #1E2125FF;
+    border-radius: 10px; /* You can adjust the border radius */
     z-index: 999;
 }
 
-#chat-bubble {
-    background-color: #007bff;
-    color: #fff;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    text-align: center;
-    cursor: pointer;
+#chat_open {
+    width: 70px;
+    height: 70px; /* Set the height to match the image size */
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-#chat-icon {
-    width: 30px;
-    height: 30px;
-}
-
-#chat-window {
-    display: none;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    width: 400px;
-    height: 400px;
-    border-radius: 10px;
-    overflow: hidden;
-
-}
-
-#chat-header {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: bold;
-}
-
-#close-button {
-    cursor: pointer;
-}
-
-#chat-body {
-    padding: 20px;
-}
-
-#name-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#start-chat-button {
-    background-color: #007bff;
-    color: #fff;
+    justify-content: center; /* Center content horizontally */
+    background-color: transparent;
     border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
+    /* You can add more styles here as needed */
+}
+.hidden {
+  display: none;
+}
+
+#chat_welcome {
+    right: 102px;
+    bottom: 30px;
+    background-color: #f2f2f2; /* Background color for the chat welcome section */
+    padding: 10px; /* Adjust the padding as needed */
+    border: 1px solid #ccc; /* Border style for the chat welcome section */
+    border-radius: 10px; /* Adjust the border radius as needed */
+
+}
+
+#chat_name {
+    width: 100%; /* Input field width */
+    padding: 5px; /* Adjust the padding as needed */
+    margin-bottom: 10px; /* Spacing between input and button */
+}
+
+#chat_join {
+    background-color: #343434; /* Button background color */
+    color: white; /* Button text color */
+    padding: 5px 10px; /* Adjust padding as needed */
+    border: none; /* Remove button border */
+    cursor: pointer; /* Change cursor on hover */
+}
+
+#chat_join:hover {
+    background-color: darkred; /* Button background color on hover */
+}
+
+#chat_log {
+    margin-bottom: 4px; /* mb-4 */
+    padding: 16px; /* p-4 */
+    background-color: white; /* bg-gray-100 */
+    border-radius: 20px; /* rounded-xl */
+    height: 300px; /* h[300px] */
+    overflow-y: scroll; /* overflow-scroll */
 }
 
 
+#chat_message_input {
+    width: 100%; /* w-full */
+    margin-bottom: 4px; /* mb-4 */
+    padding: 16px; /* p4 should be p-4 */
+    background-color: whitesmoke; /* bg-gray-100 */
+    border-radius: 20px; /* rounded-xl */
+    overflow-y: auto;
 
-/* styles.css */
-/* ... existing styles ... */
-
-#name-entry-window, #chat-window {
-    display: none;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    width: 300px;
-    border-radius: 10px;
-    overflow: hidden;
-    height: 300px; /* Adjust the height as needed */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
-#name-entry-header, #chat-header {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: bold;
-}
 
-#close-name-entry-button, #close-chat-button {
-    cursor: pointer;
-}
-
-#name-entry-body, #chat-messages {
-    padding: 20px;
-}
-
-#name-entry-body input[type="text"], #message-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#name-entry-body button, #send-button {
-    background-color: #007bff;
-    color: #fff;
+#chat_message_submit {
+    padding: 6px 12px; /* py2 px6 */
+    background-color: #3a3838; /* bgrose600 */
+    color: white; /* text=white */
     border: none;
-    padding: 10px 20px;
+    border-radius: 20px; /* rounded-xl */
     cursor: pointer;
-    border-radius: 5px;
 }

@@ -3299,34 +3299,25 @@
         </div>
     </div>
 </div>
-<div id="chat-widget">
-    <div id="chat-bubble">
-        <img src="{% static 'assets/images/icon.png' %}" alt="Chat Icon" id="chat-icon">
+<div id="chat">
+    <div id="chat_icon">
+        <button id="chat_open">
+            <img src="{% static 'assets/images/chatt-removebg-preview.png' %}">
+        </button>
     </div>
-    <div id="name-entry-window">
-        <div id="name-entry-header">
-            <span>Enter Your Name</span>
-            <span id="close-name-entry-button">&times;</span>
-        </div>
-        <div id="name-entry-body">
-            <label for="name-input">Your Name:</label>
-            <input type="text" id="name-input" placeholder="Enter your name">
-            <button id="enter-name-button">Enter</button>
-        </div>
+    <div id="chat_welcome" class="hidden">
+        <input type="text" name="name" id="chat_name" placeholder="Enter your name..">
+        <button id="chat_join">Join chat</button>
     </div>
-    <div id="chat-window" style="display: none;">
-        <div id="chat-header">
-            <span>Chat Widget</span>
-            <span id="close-chat-button">&times;</span>
+    <div id="chat_room" class="hidden">
+        <div id="chat_log">
+            <p>Welcome to our Chat! Please type your message and wait for me to join..</p>
         </div>
-        <div id="chat-messages"></div>
-        <div id="chat-input">
-            <input type="text" id="message-input" placeholder="Type a message...">
-            <button id="send-button">Send</button>
-        </div>
+        <input type="text" id="chat_message_input" placeholder="Type your message..">
+        <button id="chat_message_submit">Send</button>
+
     </div>
 </div>
-
 <!-- End Footer Area -->
 <!-- JS ============================================ -->
 <script src="{% static 'assets/js/chat.js' %}"></script>

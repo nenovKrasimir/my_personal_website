@@ -1,35 +1,46 @@
-// script.js
-const chatBubble = document.getElementById("chat-bubble");
-const chatWindow = document.getElementById("chat-window");
-const closeChatButton = document.getElementById("close-chat-button");
-const enterNameButton = document.getElementById("enter-name-button");
-const messageInput = document.getElementById("message-input");
-const nameEntryWindow = document.getElementById("name-entry-window"); // Add this line
+/**
+ * Variables
+ */
 
-chatBubble.addEventListener("click", () => {
-    nameEntryWindow.style.display = "block";
-});
+let chatName = ''
+let chatSocket = null
+let chatWindowUrl = window.location.href
+let chatRoomUuid = Math.random().toString(36).slice(2, 12)
 
-closeChatButton.addEventListener("click", () => {
-    // Close the chat window
-    chatWindow.style.display = "none";
 
-    // Remove the name entry window from the DOM
-    nameEntryWindow.remove();
-});
 
-enterNameButton.addEventListener("click", () => {
-    const userName = document.getElementById("name-input").value;
 
-    if (userName.trim() === "") {
-        alert("Please enter your name.");
-    } else {
-        // Remove the name entry window from the DOM
-        nameEntryWindow.remove();
+/**
+ * Elements
+ */
 
-        // Show the chat window
-        chatWindow.style.display = "block";
-    }
-});
+const chatElement = document.querySelector('#chat')
+const chatOpenElement = document.querySelector('#chat_open')
+const chatJoinElement = document.querySelector('#chat_join')
+const chatIconElement = document.querySelector('#chat_icon')
+const chatWelcomeElement = document.querySelector('#chat_welcome')
+const chatRoomElement = document.querySelector('#chat_room')
 
-// Add your chat functionality here
+/**
+ * Event Listeners
+ */
+
+chatOpenElement.onclick = function (e) {
+    e.preventDefault()
+
+    chatIconElement.classList.add('hidden')
+    chatWelcomeElement.classList.remove('hidden')
+
+    return false
+}
+
+
+
+chatJoinElement.onclick = function (e) {
+    e.preventDefault()
+
+    chatWelcomeElement.classList.add('hidden')
+    chatRoomElement.classList.remove('hidden')
+
+    return false
+}
