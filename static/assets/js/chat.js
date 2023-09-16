@@ -49,6 +49,54 @@ function getCookie(name) {
 
     return cookieValue
 }
+
+function sendMessage() {
+    chatSocket.send(JSON.stringify({
+        'type': 'message',
+        'message': chatInputElement.value,
+        'name': chatName
+    }))
+
+    chatInputElement.value = ''
+}
+function onChatMessage(data) {
+    console.log('onChatMessage', data);
+
+    if (data.type === 'chat_message') {
+        // Create a container div for the chat message
+        const container = document.createElement('div');
+        container.classList.add('flex', 'w-full', 'mt-2', 'space-x-3', 'max-w-d'); // Apply CSS classes
+
+        // Create the initials circle div
+        const initialsDiv = document.createElement('div');
+        initialsDiv.classList.add('flex-shrink-0', 'h-10', 'w-10', 'rounded-full', 'bg-gray-300', 'text-center', 'pt-2'); // Apply CSS classes
+        initialsDiv.textContent = data.initials; // Set initials
+
+        // Create the message container div
+        const messageContainer = document.createElement('div');
+        messageContainer.classList.add('message-container', 'bg-blue-300', 'p-3', 'rounded-l-lg', 'rounded-br-lg'); // Apply CSS classes
+
+        // Create the message text paragraph
+        const messageText = document.createElement('p');
+        messageText.classList.add('message-text', 'text-sm'); // Apply CSS classes
+        messageText.textContent = data.message; // Set message text
+
+        // Create the timestamp span
+        const timestampSpan = document.createElement('span');
+        timestampSpan.classList.add(); // Apply CSS classes
+        timestampSpan.textContent = data.created_at; // Set timestamp text
+
+        // Append elements to the hierarchy
+        messageContainer.appendChild(messageText);
+        messageContainer.appendChild(timestampSpan);
+        container.appendChild(initialsDiv);
+        container.appendChild(messageContainer);
+
+        // Append the dynamically created container to your chat log
+        chatLogElement.appendChild(container);
+    }
+}
+
 async function joinChatRoom() {
     console.log('joinChatRoom')
 
@@ -80,6 +128,8 @@ async function joinChatRoom() {
 
     chatSocket.onmessage = function (e) {
         console.log('onMessage')
+
+        onChatMessage(JSON.parse(e.data))
     }
 
     chatSocket.onopen = function (e) {
@@ -118,3 +168,11 @@ chatJoinElement.onclick = function (e) {
     return false
 }
 
+
+chatSubmitElement.onclick = function (e) {
+    e.preventDefault()
+
+    sendMessage()
+
+    return false
+}

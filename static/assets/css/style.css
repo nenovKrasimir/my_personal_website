@@ -19238,3 +19238,38 @@ body.white-version .rn-btn-ulderline {
     border-radius: 20px; /* rounded-xl */
     cursor: pointer;
 }
+
+/* Styles for the initials circle */
+.flex-shrink-0 {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Styles for the message container */
+.message-container {
+    background-color: #3498db;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Styles for the message text */
+.message-text {
+    font-size: 14px;
+    color: white;
+    margin: 0;
+}
+
+/* Styles for the timestamp */
+.timestamp {
+    font-size: 12px;
+    color: gray;
+}

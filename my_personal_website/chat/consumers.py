@@ -2,6 +2,9 @@ import json
 
 from asgiref.sync import sync_to_async
 from channels.generic.websocket import AsyncWebsocketConsumer
+from django.utils.timesince import timesince
+
+from .templates_tags.chatextras import initials
 
 
 class ChatConsumer(AsyncWebsocketConsumer):
@@ -23,3 +26,28 @@ class ChatConsumer(AsyncWebsocketConsumer):
         type = text_data_json['type']
         message = text_data_json['message']
         name = text_data_json['name']
+
+        print('Receive:', type)
+
+        if type == 'message':
+            # send message to group or room
+            await self.channel_layer.group_send(
+                self.room_group_name, {
+                    'type': 'chat_message',
+                    'message': message,
+                    'name': name,
+                    'initials': initials(name),
+                    'created_at': 'asd',  # timesince(new_message.created_at),
+                }
+            )
+
+    async def chat_message(self, event):
+        # Send message to WebSocket front-end
+
+        await self.send(text_data=json.dumps({
+            'type': event['type'],
+            'message': event['message'],
+            'name': event['name'],
+            'initials': event['initials'],
+            'created_at': event['created_at']
+        }))
