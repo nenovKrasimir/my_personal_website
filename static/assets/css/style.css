@@ -19157,7 +19157,7 @@ body.white-version .rn-btn-ulderline {
 /*# sourceMappingURL=../maps/style.css.map */
 /* styles.css */
 #chat {
-    max-width: 300px;
+    max-width: 350px;
     position: fixed;
     right: 102px;
     bottom: 30px;
@@ -19216,6 +19216,9 @@ body.white-version .rn-btn-ulderline {
     border-radius: 20px; /* rounded-xl */
     height: 300px; /* h[300px] */
     overflow-y: scroll; /* overflow-scroll */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
 }
 
 
@@ -19226,6 +19229,7 @@ body.white-version .rn-btn-ulderline {
     background-color: whitesmoke; /* bg-gray-100 */
     border-radius: 20px; /* rounded-xl */
     overflow-y: auto;
+
 
 }
 
@@ -19239,37 +19243,47 @@ body.white-version .rn-btn-ulderline {
     cursor: pointer;
 }
 
+
+#chat_message_submit:hover {
+   background-color: darkred;
+
+}
 /* Styles for the initials circle */
 .flex-shrink-0 {
     flex-shrink: 0;
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #3498db;
+    background-color: darkred;
     color: white;
     display: flex;
-    align-items: center;
     justify-content: center;
     font-weight: bold;
     font-size: 14px;
+    margin-left: auto;
+
+
 }
 
-/* Styles for the message container */
 .message-container {
-    background-color: #3498db;
-    padding: 10px;
-    border-radius: 10px;
-}
+  background-color: gray;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 70%;
+  width: auto;
+  overflow: hidden;
+  white-space: normal;
+  word-wrap: break-word;
+  display: inline-block;
+  text-align: right;
 
+
+
+}
 /* Styles for the message text */
 .message-text {
     font-size: 14px;
     color: white;
-    margin: 0;
-}
-
-/* Styles for the timestamp */
-.timestamp {
-    font-size: 12px;
-    color: gray;
+    overflow: hidden;
+    white-space: normal;
 }

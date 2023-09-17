@@ -50,6 +50,12 @@ function getCookie(name) {
     return cookieValue
 }
 
+function scrollToBottom() {
+    // Scroll to the bottom of the chat log
+    chatLogElement.scrollTop = chatLogElement.scrollHeight;
+}
+
+
 function sendMessage() {
     chatSocket.send(JSON.stringify({
         'type': 'message',
@@ -61,6 +67,7 @@ function sendMessage() {
 }
 function onChatMessage(data) {
     console.log('onChatMessage', data);
+    const message = document.getElementById("chat_message_input").value;
 
     if (data.type === 'chat_message') {
         // Create a container div for the chat message
@@ -74,7 +81,7 @@ function onChatMessage(data) {
 
         // Create the message container div
         const messageContainer = document.createElement('div');
-        messageContainer.classList.add('message-container', 'bg-blue-300', 'p-3', 'rounded-l-lg', 'rounded-br-lg'); // Apply CSS classes
+        messageContainer.classList.add('message-container',); // Apply CSS classes
 
         // Create the message text paragraph
         const messageText = document.createElement('p');
@@ -92,10 +99,16 @@ function onChatMessage(data) {
         container.appendChild(initialsDiv);
         container.appendChild(messageContainer);
 
+
         // Append the dynamically created container to your chat log
         chatLogElement.appendChild(container);
+
+        scrollToBottom()
+        document.getElementById("chat_message_input").value = "";
     }
 }
+
+
 
 async function joinChatRoom() {
     console.log('joinChatRoom')
@@ -176,3 +189,11 @@ chatSubmitElement.onclick = function (e) {
 
     return false
 }
+
+document.getElementById("chat_message_input").addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault(); // Prevent the Enter key from creating a new line
+        // Call a function to send the message here
+        sendMessage();
+    }
+});

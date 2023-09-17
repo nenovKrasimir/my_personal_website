@@ -37,7 +37,7 @@ class ChatConsumer(AsyncWebsocketConsumer):
                     'message': message,
                     'name': name,
                     'initials': initials(name),
-                    'created_at': 'asd',  # timesince(new_message.created_at),
+                    'created_at': '' # timesince(created_at),
                 }
             )
 
