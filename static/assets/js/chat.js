@@ -55,6 +55,20 @@ function scrollToBottom() {
     chatLogElement.scrollTop = chatLogElement.scrollHeight;
 }
 
+function formatTimeDifference(timeDifference) {
+    if (timeDifference < 60000) {
+        return 'Just now';
+    } else if (timeDifference < 3600000) {
+        const minutes = Math.floor(timeDifference / 60000);
+        return `${minutes} minute${minutes > 1 ? 's' : ''} ago`;
+    } else if (timeDifference < 86400000) {
+        const hours = Math.floor(timeDifference / 3600000);
+        return `${hours} hour${hours > 1 ? 's' : ''} ago`;
+    } else {
+        const days = Math.floor(timeDifference / 86400000);
+        return `${days} day${days > 1 ? 's' : ''} ago`;
+    }
+}
 
 function sendMessage() {
     chatSocket.send(JSON.stringify({
@@ -90,18 +104,28 @@ function onChatMessage(data) {
 
         // Create the timestamp span
         const timestampSpan = document.createElement('span');
-        timestampSpan.classList.add(); // Apply CSS classes
-        timestampSpan.textContent = data.created_at; // Set timestamp text
+        const created_at = new Date(data.created_at)
+        const now = new Date()
+        const timeDifference = now - created_at;
+
+        const formattedTimeDifference = formatTimeDifference(timeDifference)
+
+        timestampSpan.classList.add('timestamp'); // Apply CSS classes
+        timestampSpan.textContent = formattedTimeDifference + ' ago'; // Set timestamp text
 
         // Append elements to the hierarchy
         messageContainer.appendChild(messageText);
-        messageContainer.appendChild(timestampSpan);
         container.appendChild(initialsDiv);
         container.appendChild(messageContainer);
 
 
+        const timestampWrapper = document.createElement('div');
+        timestampWrapper.classList.add('timestamp-wrapper');
+        timestampWrapper.appendChild(timestampSpan);
+
         // Append the dynamically created container to your chat log
         chatLogElement.appendChild(container);
+        chatLogElement.appendChild(timestampWrapper);
 
         scrollToBottom()
         document.getElementById("chat_message_input").value = "";
