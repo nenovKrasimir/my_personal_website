@@ -96,7 +96,7 @@ function onChatMessage(data) {
 
         // Create the message container div
         const messageContainer = document.createElement('div');
-        messageContainer.classList.add('message-container',); // Apply CSS classes
+        messageContainer.classList.add('message-container', ); // Apply CSS classes
 
         // Create the message text paragraph
         const messageText = document.createElement('p');
@@ -119,8 +119,8 @@ function onChatMessage(data) {
 
         // Append elements to the hierarchy
         messageContainer.appendChild(messageText);
-        container.appendChild(initialsDiv);
         container.appendChild(messageContainer);
+        container.appendChild(initialsDiv);
 
 
         const timestampWrapper = document.createElement('div');
