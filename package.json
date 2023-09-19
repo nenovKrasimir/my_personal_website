@@ -1,5 +1,6 @@
 {
   "type": "module",
+  "name": "date-fns",
   "dependencies": {
     "date-fns": "^2.30.0",
     "fs": "^0.0.1-security"

@@ -19249,6 +19249,7 @@ body.white-version .rn-btn-ulderline {
 
 }
 /* Styles for the initials circle */
+/* Adjust the .flex-shrink-0 class */
 .flex-shrink-0 {
     flex-shrink: 0;
     width: 30px;
@@ -19259,12 +19260,10 @@ body.white-version .rn-btn-ulderline {
     display: flex;
     justify-content: center;
     font-weight: bold;
-    font-size: 14px;
-    margin-left: auto;
+    font-size: 14px; /* Increase margin for spacing */
     align-items: center;
-
-
 }
+
 
 .message-container {
   background-color: gray;
@@ -19277,6 +19276,7 @@ body.white-version .rn-btn-ulderline {
   word-wrap: break-word;
   display: inline-block;
   text-align: left;
+  margin-left: auto;
 
 
 

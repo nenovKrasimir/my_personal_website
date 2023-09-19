@@ -1,13 +1,13 @@
-import {formatDistanceToNow} from "date-fns";
 /**
  * Variables
  */
+
+
 
 let chatName = ''
 let chatSocket = null
 let chatWindowUrl = window.location.href
 let chatRoomUuid = Math.random().toString(36).slice(2, 12)
-
 
 
 
@@ -55,35 +55,21 @@ function scrollToBottom() {
     // Scroll to the bottom of the chat log
     chatLogElement.scrollTop = chatLogElement.scrollHeight;
 }
+
 function formatTimeDifference(timeDifference) {
     const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
     const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
 
     if (days > 0) {
-        return `${days} day${days > 1 ? 's' : ''} ago`;
+        return `${days} day${days > 1 ? 's' : ' ago'}`;
     } else if (hours > 0) {
-        return `${hours} hour${hours > 1 ? 's' : ''} ago`;
+        return `${hours} hour${hours > 1 ? 's' : ' ago'}`;
     } else {
-        return `${minutes} minute${minutes > 1 ? 's' : ''} ago`;
+        return `${minutes} minute${minutes > 1 ? 's' : ' ago'}`;
     }
 }
-
 // Function to update the timestamp text
-function updateTimestamps() {
-    const timestamps = document.querySelectorAll('.timestamp');
-
-    timestamps.forEach(timestamp => {
-        const created_at = new Date(timestamp.dataset.createdat);
-
-        // Calculate the time difference and format it using formatDistanceToNow
-        const formattedTimeDifference = formatDistanceToNow(created_at);
-
-        // Set the timestamp text with the updated time
-        timestamp.textContent = formattedTimeDifference + " ago";
-    });
-}
-
 
 function sendMessage() {
     chatSocket.send(JSON.stringify({
@@ -127,7 +113,9 @@ function onChatMessage(data) {
         const formattedTimeDifference = formatTimeDifference(timeDifference)
 
         timestampSpan.classList.add('timestamp'); // Apply CSS classes
-        timestampSpan.textContent = formattedTimeDifference + ' ago'; // Set timestamp text
+        timestampSpan.textContent = formattedTimeDifference + ''; // Set timestamp text
+        timestampSpan.setAttribute('data-created-at', data.created_at);
+
 
         // Append elements to the hierarchy
         messageContainer.appendChild(messageText);
@@ -147,6 +135,23 @@ function onChatMessage(data) {
         document.getElementById("chat_message_input").value = "";
     }
 }
+
+// Function to update timestamps for all chat messages
+function updateTimestamps() {
+    const chatMessages = document.querySelectorAll('.timestamp');
+
+    chatMessages.forEach((timestampElement) => {
+
+        const created_at = new Date(timestampElement.getAttribute('data-created-at'));
+        const now = new Date();
+        const timeDifference = now - created_at;
+        const formattedTimeDifference = formatTimeDifference(timeDifference);
+
+        timestampElement.textContent = formattedTimeDifference + '';
+    });
+}
+
+// Call the updateTimestamps function initially and at regular intervals
 
 
 
