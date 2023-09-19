@@ -19157,7 +19157,7 @@ body.white-version .rn-btn-ulderline {
 /*# sourceMappingURL=../maps/style.css.map */
 /* styles.css */
 #chat {
-    max-width: 350px;
+    max-width: 400px;
     position: fixed;
     right: 102px;
     bottom: 30px;
@@ -19214,7 +19214,7 @@ body.white-version .rn-btn-ulderline {
     padding: 16px; /* p-4 */
     background-color: white; /* bg-gray-100 */
     border-radius: 20px; /* rounded-xl */
-    height: 300px; /* h[300px] */
+    height: 400px; /* h[300px] */
     overflow-y: scroll; /* overflow-scroll */
     word-wrap: break-word;
     overflow-wrap: break-word;

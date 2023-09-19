@@ -1,3 +1,4 @@
+
 /**
  * Variables
  */
@@ -54,21 +55,35 @@ function scrollToBottom() {
     // Scroll to the bottom of the chat log
     chatLogElement.scrollTop = chatLogElement.scrollHeight;
 }
-
 function formatTimeDifference(timeDifference) {
-    if (timeDifference < 60000) {
-        return 'Just now';
-    } else if (timeDifference < 3600000) {
-        const minutes = Math.floor(timeDifference / 60000);
-        return `${minutes} minute${minutes > 1 ? 's' : ''} ago`;
-    } else if (timeDifference < 86400000) {
-        const hours = Math.floor(timeDifference / 3600000);
+    const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+
+    if (days > 0) {
+        return `${days} day${days > 1 ? 's' : ''} ago`;
+    } else if (hours > 0) {
         return `${hours} hour${hours > 1 ? 's' : ''} ago`;
     } else {
-        const days = Math.floor(timeDifference / 86400000);
-        return `${days} day${days > 1 ? 's' : ''} ago`;
+        return `${minutes} minute${minutes > 1 ? 's' : ''} ago`;
     }
 }
+
+// Function to update the timestamp text
+function updateTimestamps() {
+    const timestamps = document.querySelectorAll('.timestamp');
+
+    timestamps.forEach(timestamp => {
+        const created_at = new Date(timestamp.dataset.createdat);
+
+        // Calculate the time difference and format it using formatDistanceToNow
+        const formattedTimeDifference = formatDistanceToNow(created_at);
+
+        // Set the timestamp text with the updated time
+        timestamp.textContent = formattedTimeDifference + " ago";
+    });
+}
+
 
 function sendMessage() {
     chatSocket.send(JSON.stringify({
@@ -107,6 +122,7 @@ function onChatMessage(data) {
         const created_at = new Date(data.created_at)
         const now = new Date()
         const timeDifference = now - created_at;
+
 
         const formattedTimeDifference = formatTimeDifference(timeDifference)
 
@@ -221,3 +237,5 @@ document.getElementById("chat_message_input").addEventListener("keydown", functi
         sendMessage();
     }
 });
+
+setInterval(updateTimestamps, 60000); // Update every minute (adjust as needed)
