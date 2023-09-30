@@ -25,6 +25,7 @@ class ChatConsumer(AsyncWebsocketConsumer):
         type = text_data_json['type']
         message = text_data_json['message']
         name = text_data_json['name']
+        user = text_data_json.get['user', '']
 
         print('Receive:', type)
 
@@ -37,6 +38,7 @@ class ChatConsumer(AsyncWebsocketConsumer):
                     'name': name,
                     'initials': initials(name),
                     'created_at': timezone.now().isoformat(),
+                    'user': user
                 }
             )
 
